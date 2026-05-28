@@ -1,0 +1,15 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+tfplan
+
+# Environment files
+.env
+*.env
+
+# OS/editor files
+.DS_Store
+.vscode/
+.idea/
