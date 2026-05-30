@@ -9,3 +9,9 @@ variable "location" {
   type        = string
   default     = "uksouth"
 }
+
+variable "container_registry_name" {
+  description = "Name of the Azure Container Registry. Must be globally unique and contain only letters and numbers."
+  type        = string
+  default     = "acraiinfraadeebdev"
+}

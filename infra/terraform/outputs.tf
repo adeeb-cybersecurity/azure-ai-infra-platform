@@ -8,3 +8,12 @@ output "resource_group_location" {
   value       = azurerm_resource_group.main.location
 }
 
+output "container_registry_name" {
+  description = "The name of the Azure Container Registry"
+  value       = azurerm_container_registry.main.name
+}
+
+output "container_registry_login_server" {
+  description = "The login server URL for the Azure Container Registry"
+  value       = azurerm_container_registry.main.login_server
+}
