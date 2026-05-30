@@ -17,3 +17,14 @@ output "container_registry_login_server" {
   description = "The login server URL for the Azure Container Registry"
   value       = azurerm_container_registry.main.login_server
 }
+
+output "log_analytics_workspace_name" {
+  description = "The name of the Log Analytics Workspace"
+  value       = azurerm_log_analytics_workspace.main.name
+}
+
+output "log_analytics_workspace_id" {
+  description = "The ID of the Log Analytics Workspace"
+  value       = azurerm_log_analytics_workspace.main.id
+}
+

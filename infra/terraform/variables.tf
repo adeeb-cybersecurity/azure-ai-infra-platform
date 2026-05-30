@@ -15,3 +15,10 @@ variable "container_registry_name" {
   type        = string
   default     = "acraiinfraadeebdev"
 }
+
+variable "log_analytics_workspace_name" {
+  description = "Name of the Log Analytics Workspace"
+  type        = string
+  default     = "log-ai-infra-dev-uksouth"
+}
+
