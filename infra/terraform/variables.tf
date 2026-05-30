@@ -22,3 +22,8 @@ variable "log_analytics_workspace_name" {
   default     = "log-ai-infra-dev-uksouth"
 }
 
+variable "container_app_environment_name" {
+  description = "Name of the Azure Container Apps Environment"
+  type        = string
+  default     = "cae-ai-infra-dev-uksouth"
+}
