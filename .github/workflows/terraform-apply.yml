@@ -33,6 +33,9 @@ jobs:
       - name: Terraform init
         run: terraform init
 
+      - name: Show Terraform backend state
+        run: terraform state list
+
       - name: Terraform format check
         run: terraform fmt -check -recursive
 
