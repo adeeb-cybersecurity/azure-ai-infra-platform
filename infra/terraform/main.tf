@@ -6,6 +6,7 @@ terraform {
     storage_account_name = "sttfstateaiinfraadeeb"
     container_name       = "tfstate"
     key                  = "dev.terraform.tfstate"
+    use_azuread_auth     = true
   }
   required_providers {
     azurerm = {
