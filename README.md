@@ -58,6 +58,48 @@ docs/architecture.md
 
 ---
 
+---
+
+## Platform Screenshots
+
+### Architecture Diagram
+
+![Architecture Diagram](screenshots/01-architecture.png)
+
+The platform is provisioned and managed using Terraform, GitHub Actions, Azure Container Apps, Azure Container Registry, remote Terraform state, and OIDC-based authentication.
+
+---
+
+### Azure Infrastructure
+
+![Azure Resource Group](screenshots/02-resource-group.png)
+
+The resource group contains the platform resources deployed through Terraform, including Azure Container Apps, Azure Container Registry, Log Analytics, and supporting infrastructure.
+
+---
+
+### Infrastructure Deployment
+
+![Terraform Apply](screenshots/06-terraform-apply.png)
+
+Infrastructure changes are deployed through GitHub Actions using Terraform and authenticated through Azure OpenID Connect (OIDC).
+
+---
+
+### Operational Visibility
+
+![Log Analytics](screenshots/08-log-analytics-kql.png)
+
+Application and platform logs are collected in Azure Log Analytics and queried using Kusto Query Language (KQL).
+
+---
+
+### Remote Terraform State
+
+![Remote Terraform State](screenshots/10-remote-terraform-state.png)
+
+Terraform state is stored remotely in Azure Blob Storage, enabling consistent state management across local development and CI/CD environments.
+
 ## Technology Stack
 
 ### Cloud
