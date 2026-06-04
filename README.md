@@ -88,7 +88,7 @@ Infrastructure changes are deployed through GitHub Actions using Terraform and a
 
 ### Operational Visibility
 
-![Log Analytics](screenshots/08-log-analytics-kql.png)
+![Log Analytics](screenshots/08-log-analytics.png)
 
 Application and platform logs are collected in Azure Log Analytics and queried using Kusto Query Language (KQL).
 
@@ -96,7 +96,7 @@ Application and platform logs are collected in Azure Log Analytics and queried u
 
 ### Remote Terraform State
 
-![Remote Terraform State](screenshots/10-remote-terraform-state.png)
+![Remote Terraform State](screenshots/10-remote-state.png)
 
 Terraform state is stored remotely in Azure Blob Storage, enabling consistent state management across local development and CI/CD environments.
 
